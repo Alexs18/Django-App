@@ -13,9 +13,17 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+from pickle import TRUE
 from django.contrib import admin
 from django.urls import path
 
+##Prueba de funciones
+
+def Saludar(selt):
+    print('saludando..')
+    return TRUE
+
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('saludar/', Saludar)
 ]
