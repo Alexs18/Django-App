@@ -1,14 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>This is the home to the proyect</title>
-</head>
-<body>
-    <div>
-        <p>Hello world since the templates file</p>
+{# Load the tag library #}
+{% load bootstrap5 %}
+
+{# Load CSS and JavaScript #}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+
+{# Display django.contrib.messages as Bootstrap alerts #}
+{% bootstrap_messages %}
+
+<div class="row p-4">
+    <div class="col-4 p-2">
+        <input type="button" class="btn btn-success" value="Ingresos">
     </div>
-</body>
-</html>
+    <div class="col-8 p-2 bg-primary">
+        <p>dev</p>
+    </div>
+</div>
+
+<!-- <div class="row justify-content-center align-items-center" style="min-height: 90vh; margin: 0 !important;" >
+    <div class="col-5">
+        <img style="width:200px; height:200px;" src="https://itedup.com/blog/wp-content/uploads/Flujo-de-ingresos-De-donde-van-a-llegar-las-ganancias-para-mi-empresa.jpg" alt="">
+    </div>
+</div>
+
+<div class="row">
+    <div class="col">
+        <input type="button" class="form-control btn btn-primary" value="Ingresos">
+    </div>
+    <div class="row">
+        <input type="button" class="form-control btn btn-danger" value="Egresos">
+    </div>
+</div>
+
+<form>
+    <div class="row">
+      <div class="col">
+        <input type="text" class="form-control" placeholder="First name">
+      </div>
+      <div class="col">
+        <input type="text" class="form-control" placeholder="Last name">
+      </div>
+    </div>
+  </form> -->

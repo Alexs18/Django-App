@@ -1,12 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Este es el Login</title>
-</head>
-<body>
-    <p>Este es el Login....</p>
-</body>
-</html>
+{# Load the tag library #}
+{% load bootstrap5 %}
+
+{# Load CSS and JavaScript #}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+
+{# Display django.contrib.messages as Bootstrap alerts #}
+{% bootstrap_messages %}
+
+{# Display a form #}
+
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+    }
+</style>
+
+<div class="row justify-content-center align-items-center" style="min-height: 90vh; margin: 0 !important;">
+    <form action="" style="width: 450px; height: 400px;" class="bg-success d-flex justify-content-center flex-column p-4" method="post">
+        <div class="form-group mx-sm-5 mb-2 mt-2">
+            <label for="" class="">
+            </label>
+            <input class="form-control" type="text" placeholder="Inicie Sesion">
+        </div>
+        <div class="form-group mx-sm-5 mb-2">
+            <label for="">
+            </label>
+            <input class="form-control" type="password" name="" id="" placeholder="*******">
+        </div>
+        <div class="form-group mx-sm-5 mb-2">
+            <button class="btn btn-primary form-control"> Iniciar Sesión </button>
+        </div>
+    
+    </form>
+</div>
+
+{# Read the documentation for more information #}
